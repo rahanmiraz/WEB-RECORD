@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application Form</title>
+</head>
+<body>
+
+    <h2>Job Application Form</h2>
+
+    <form action="" method="POST">
+        
+        <p>
+            <label for="resume">Upload Resume:</label><br>
+            <input type="file" id="resume" name="resume">
+        </p>
+
+        <p>
+            <label for="experience">Work Experience:</label><br>
+            <textarea id="experience" name="experience" rows="8" cols="50" placeholder="Detail your previous roles and responsibilities..."></textarea>
+        </p>
+
+        <fieldset>
+            <legend>Employment Type</legend>
+            <input type="radio" id="full-time" name="employment_type" value="full-time" checked>
+            <label for="full-time">Full-time</label><br>
+            
+            <input type="radio" id="part-time" name="employment_type" value="part-time">
+            <label for="part-time">Part-time</label><br>
+            
+            <input type="radio" id="contract" name="employment_type" value="contract">
+            <label for="contract">Contract</label>
+        </fieldset>
+
+        <p>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+        </p>
+
+        <button type="submit">Submit Application</button>
+
+    </form>
+
+</body>
+</html>
